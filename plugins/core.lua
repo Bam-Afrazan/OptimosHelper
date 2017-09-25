@@ -2656,11 +2656,11 @@ if matches[1] == '/beyond' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> SoLiD", callback_data="/solid:"..matches[2]}, 
-			{text = "> ToOfan", callback_data="/toofan:"..matches[2]}
+			{text = "> HajMilat", callback_data="/HajMilat:"..matches[2]}, 
+			{text = "> Optimos", callback_data="/optimos2:"..matches[2]}
 		},
 		{
-			{text = '> Our GitHub ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> KiavaCo. ', url = 'https://kiava.co'}
 		},
 		{
 			{text= '> Back' ,callback_data = '/option:'..matches[2]}
@@ -2670,11 +2670,11 @@ if matches[1] == '/beyond' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> سعید", callback_data="/solid:"..matches[2]}, 
-			{text = "> طوفان", callback_data="/toofan:"..matches[2]}
+			{text = "> حاج", callback_data="/HajMilat:"..matches[2]}, 
+			{text = "> اپتیموس", callback_data="/optimos2:"..matches[2]}
 		},
 		{
-			{text = '> گیت هاب تیم ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> سایت سازنده ربات ', url = 'https://kiava.co'}
 		},
 		{
 			{text= '> بازگشت' ,callback_data = '/option:'..matches[2]}
@@ -2684,21 +2684,14 @@ if matches[1] == '/beyond' then
     edit_inline(msg.message_id, text, keyboard)
 end
 
-if matches[1] == '/solid' then
-local text = [[*》SoLiD Information《*
-_》Age :_ *26*
-_》Name :_ *Saeid Rostami*
-_》City :_ *Shahriar - Tehran*
+if matches[1] == '/HajMilat' then
+local text = [[*》HajMilat Information《*
+_》Age :_ *18*
+_》Name :_ *HajMilat*
+_》City :_ *Iran - Booshehr*
 *-------------------------*
-*》GitHub :《*
-》[SoLiD021](Github.Com/SoLiD021)
-*-------------------------*
-*》Bridges :《*
-_》Pv : _[@SoLiD](Telegram.Me/SoLiD)
-_》PvResan : _[@SoLiD Pv](Telegram.Me/SoLiD021Pv_Bot)
-*-------------------------*
-*》Expertise :《*
-_》_*Lua*, *Cli* `and` *Api* _Bots_
+*》Telegram :《*
+》[HajMilat](t.me/Haj_Milat)
 *-------------------------*]]
   if not lang then
 		keyboard = {} 
@@ -2717,21 +2710,8 @@ _》_*Lua*, *Cli* `and` *Api* _Bots_
   end
     edit_inline(msg.message_id, text, keyboard)
 end
-if matches[1] == '/toofan' then
-local text = [[*》ToOfan Information《*
-_》Age :_ *35*
-_》Name :_ *Ali AzizAbadi*
-_》City :_ *Bam - Kerman*
-*-------------------------*
-*》GitHub :《*
-》[To0fan](GitHub.Com/To0fan)
-*-------------------------*
-*》Bridges :《*
-_》Pv :_ [@ToOfan](Telegram.Me/ToOfan)
-_》PvResan :_ [@ToOfanRobot](Telegram.Me/ToOfanRobot)
-*-------------------------*
-*》Expertise :《*
-*》C#, Lua, VB.Net, JAVA*
+if matches[1] == '/optimos2' then
+local text = [[*》Optimos Information《*
 
 *-------------------------*]]
   if not lang then
@@ -2821,7 +2801,7 @@ return {
 		"^###cb:(/mutekeyboard):(.*)$",
 		"^###cb:(/mutecontact):(.*)$",
 		"^###cb:(/muteforward):(.*)$",
-		"^###cb:(/toofan):(.*)$",
+		"^###cb:(/optimos2):(.*)$",
 		"^###cb:(/setflood):(.*)$",
 		"^###cb:(/floodup):(.*)$",
 		"^###cb:(/flooddown):(.*)$",
@@ -2843,7 +2823,7 @@ return {
 		"^###cb:(/whitelist):(.*)$",
 		"^###cb:(/cleanwhitelist):(.*)$",
 		"^###cb:(/silentlist):(.*)$",
-		"^###cb:(/solid):(.*)$",
+		"^###cb:(/HajMilat):(.*)$",
 		"^###cb:(/cleansilentlist):(.*)$",
 		"^###cb:(/link):(.*)$",
 		"^###cb:(/rules):(.*)$",
