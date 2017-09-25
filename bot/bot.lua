@@ -1,8 +1,8 @@
 package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
-bot_token = "Token" --Put You Token Here
+bot_token = "479201988:AAFAXrtNb5QRy7e-oWkKpx9ySD6NO4suYho" --Put You Token Here
 send_api = "https://api.telegram.org/bot"..bot_token
-sudo_id = 157059515
+sudo_id = 278259998
 require('./bot/methods')
 require('./bot/utils')
 require('./libs/JSON')
@@ -152,7 +152,7 @@ function create_config( )
 	server_user = string.gsub(server_user, '%s+$', '')
 	server_user = string.gsub(server_user, '[\n\r]+', ' ') 
 	if server_user:match("^root$") then
-		BeyondTeam = '/root/BDReborn'
+		BeyondTeam = '/root/Optimosbot'
 	elseif not server_user:match("^root$") then
 		BeyondTeam = '/home/'..server_user..'/BDReborn'
 	end
@@ -162,28 +162,11 @@ function create_config( )
     "core",
     "plugins"
     },
-    sudo_users = {157059515},--Sudo users
+    sudo_users = {278259998,247134702,401598924},--Sudo users
     admins = {},
     disabled_channels = {},
     moderation = {data = ''..BeyondTeam..'/data/moderation.json'},
-    info_text = [[*》Beyond Helper Bot V1.5*
-`》An helper bot of` *BDReborn* `based on` *BDMessenger*
-
-》[Beyond Helper](https://github.com/BeyondTeam/BDHelper)
-
-*》Admins :*
-*》Founder & Developer :* [SoLiD](Telegram.Me/SoLiD)
-_》Developer :_ [ToOfan](Telegram.Me/ToOfan)
-_》Developer & Sponser :_ [MAKAN](Telegram.Me/MAKAN)
-
-*》Special thanks to :*
-》[Amir Bagheri](Telegram.Me/CodeLua)
-
-*》Our channel :*
-》[BeyondTeam](Telegram.Me/BeyondTeam)
-
-*》Our Site :*
-》[BeyondTeam](BeyondTeam.ir)
+    info_text = [[
 ]],
   }
   serialize_to_file(config, './data/config.lua')
